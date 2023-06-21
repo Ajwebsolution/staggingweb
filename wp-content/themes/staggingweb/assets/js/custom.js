@@ -179,7 +179,7 @@ $(window).on('load', function () {
     });
 });
 
-//calc Area between the range
+// calc fn by amit area bw  range
 function calculateCost() {
   const areaInput = document.getElementById('areaInput');
   const area = parseInt(areaInput.value);
@@ -208,24 +208,26 @@ function calculateCost() {
 
 function displayResult(area, cost) {
   const resultDiv = document.getElementById('result');
-  resultDiv.innerHTML = area + ' m2 = ' + cost;
+  resultDiv.innerHTML = area + ' m<sup>2</sup> = ' + cost;
 }
-// WHEN we know 1m2=something
-// function convert() {
-//     // Get the input value
-//     var inputValue = document.getElementById("m2Input").value;
 
-//     // Perform the conversion
-//     var result = inputValue * 96.67;
 
-//     // Round the result to the nearest integer
-//     result = Math.round(result);
 
-//     // Display the result
-//     displayResult(inputValue, result);
-//     // document.getElementById("result").textContent = inputValue + ' m<sup>2</sup> = ' + result;
-// }
-// function displayResult(inputValue, result) {
-//       const resultDiv = document.getElementById('result');
-//       resultDiv.innerHTML = inputValue + ' m<sup>2</sup> = ' + result;
-//     }
+function convert() {
+    // Get the input value
+    var inputValue = document.getElementById("m2Input").value;
+
+    // Perform the conversion
+    var aresult = inputValue * 96.67;
+
+    // Round the result to the nearest integer
+    aresult = Math.round(aresult);
+
+    // Display the result
+    displayAreaResult(inputValue, aresult);
+    // document.getElementById("result").textContent = inputValue + ' m<sup>2</sup> = ' + result;
+}
+function displayAreaResult(inputValue, aresult) {
+      const resultDiv = document.getElementById('aresult');
+      resultDiv.innerHTML = inputValue + ' m<sup>2</sup> = ' + aresult;
+    }
