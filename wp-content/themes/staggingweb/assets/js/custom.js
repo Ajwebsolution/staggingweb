@@ -179,7 +179,7 @@ $(window).on('load', function () {
     });
 });
 
-//calc fn by amit
+//calc Area between the range
 function calculateCost() {
   const areaInput = document.getElementById('areaInput');
   const area = parseInt(areaInput.value);
