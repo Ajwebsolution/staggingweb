@@ -72,45 +72,6 @@ get_header();
 ===================================================================================================-->
     <section class="rechner">
         <div class="container rechner-content">
-<!--             <div class="row d-none">
-                <div class="col-md-6">
-                    <div class="heading wow slideInUp">
-                        <h2><strong>3900€</strong> Basispreis<sup>*</sup></h2>
-
-                        <p>*zzgl. MwSt.</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="heading wow slideInUp" data-wow-delay=".6s">
-                        <p>Für Objekte zwischen 30 und 80m2 zahlen Sie nur 35€ pro weiteren Quadratmeter.</p>
-                    </div>
-                </div>
-            </div> -->
-
-<!--             <div class="row d-none">
-                <div class="col-lg-8">
-                    <div class="rechner-sec">
-                        <a href="#" class="btn-custom wow slideInUp"><span>jetzt anfragen</span></a>
-
-                        <div class="calculate wow slideInUp">
-                            <h3>Wie viel kostet Sie Home Staging für Ihr Objekt?</h3>
-                            <p>Tragen Sie hier Ihre Wohnfläche ein:</p>
-
-                            <div class="calculate-cost">
-                                <div class="calc_input">
-                                    <input type="number" class="input_calc" placeholder="30" id="testInput">
-                                    <span>m<sup>2</sup></span>
-                                </div>
-
-                                <img src="assets/img/cta-arrow.svg" alt="arrow" class="img-fluid">
-
-                                <span class="text-orange"><span>3.900</span> €</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
             <div class="row">
                 <div class="col-md-12">
                     <div class="calculator">
