@@ -1,0 +1,83 @@
+.ratings {
+    &-carousel {
+        .owl-item {
+            scale: 0.9;
+
+            .item {
+                position: relative;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: rgb(255 255 255 / 50%);
+                    backdrop-filter: blur(5px);
+                }
+
+                p {
+                    display: none;
+                    margin-bottom: 0;
+                }
+            }
+
+            &.center {
+                scale: 1;
+
+                .item {
+                    &:after {
+                        background-color: transparent;
+                        backdrop-filter: blur(0);
+                    }
+
+                    p {
+                        margin-bottom: 0;
+                        display: block;
+                    }
+
+                    #page {
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+        }
+
+        .owl-nav {
+            position: absolute;
+            top: calc(50% - 65px);
+            width: 100%;
+            transform: translateY(-50%);
+
+            button {
+                position: absolute;
+
+                span {
+                    width: 2.125rem;
+                    height: 3.125rem;
+                    display: block;
+                    font-size: 0;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+
+                &.owl-prev {
+                    left: 2rem;
+
+                    span {
+                        background-image: url("../img/arrow-left.svg");
+                    }
+                }
+
+                &.owl-next {
+                    right: 2rem;
+
+                    span {
+                        background-image: url("../img/arrow-right.svg");
+                    }
+                }
+            }
+        }
+    }
+}

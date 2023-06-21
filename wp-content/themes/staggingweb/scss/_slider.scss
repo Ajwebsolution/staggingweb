@@ -1,0 +1,51 @@
+.slider {
+    @media (min-width: 1099px) {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    &-home {
+        height: 100%;
+
+        .item {
+            img {}
+        }
+
+        .owl-nav {
+            position: absolute;
+            bottom: 10%;
+
+            button {
+                position: absolute;
+
+                span {
+                    width: 5rem;
+                    height: 1.25rem;
+                    display: block;
+                    font-size: 0;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+
+                &.owl-prev {
+                    left: 5rem;
+                    animation: mover 1s infinite alternate;
+
+                    span {
+                        background-image: url("../img/cta-arrow.svg");
+                    }
+                }
+
+                &.owl-next {
+                    display: none;
+                    left: 12rem;
+                    rotate: 180deg;
+
+                    span {
+                        background-image: url("../img/cta-arrow.svg");
+                    }
+                }
+            }
+        }
+    }
+}

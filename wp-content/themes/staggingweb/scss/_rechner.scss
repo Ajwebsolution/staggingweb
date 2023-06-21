@@ -1,0 +1,87 @@
+.rechner {
+    background-image: url('../img/rebstock-nachher.jpg');
+    position: relative;
+    background-size: cover;
+    background-position: center bottom;
+    padding: 6.875rem 0;
+
+    &:before {
+        content: '';
+        background-color: rgb(255 255 255 / 50%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        backdrop-filter: blur(10px);
+        z-index: 0;
+    }
+
+    &-sec {
+        a {
+            font-family: "roc-grotesk-wide";
+            font-weight: 600;
+        }
+
+        .calculate {
+            margin-top: 10rem;
+        }
+    }
+
+    &-content {
+        position: relative;
+        z-index: 9;
+    }
+
+    .heading {
+        margin-bottom: 3.125rem;
+
+        h2 {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.calculate-cost {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 84%;
+
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+
+    input {
+        font-size: 3.75rem;
+        border: none;
+        background: transparent;
+        border-bottom: 2px solid;
+        width: 11.25rem;
+        line-height: 1.4;
+        text-align: center;
+        margin-right: 10px;
+        appearance: none;
+
+        @media (max-width: 767px) {
+            font-size: 2.5rem;
+            width: 10rem;
+        }
+    }
+
+    span {
+        font-size: 3.75rem;
+
+        @media (max-width: 767px) {
+            font-size: 2.5rem;
+        }
+
+        sup {}
+    }
+
+    img {
+        height: 1.313rem;
+        animation: mover 1s infinite alternate;
+    }
+}

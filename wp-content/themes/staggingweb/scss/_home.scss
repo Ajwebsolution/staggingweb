@@ -1,0 +1,119 @@
+section {
+    margin-bottom: 12.5rem;
+
+    @media (max-width: 1366px) {
+        margin-bottom: 9rem;
+    }
+
+    @media (max-width: 1199px) {
+        margin-bottom: 7rem;
+    }
+
+    @media (max-width: 500px) {
+        margin-bottom: 3rem;
+    }
+}
+
+.heading {
+    h2 {
+        font-weight: 400;
+        letter-spacing: -0.6px;
+        margin-bottom: 3.125rem;
+
+        strong {
+            font-family: "roc-grotesk-wide";
+            font-weight: 500;
+        }
+
+        span {
+            font-size: 1.25rem;
+        }
+    }
+}
+
+.btn-custom {
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    border: 2px solid;
+    padding: 0.938rem 1.125rem;
+    border-radius: 3.125rem;
+    display: inline-block;
+    text-transform: uppercase;
+
+    font-family: "roc-grotesk-wide";
+    font-weight: 600;
+
+    span,
+    i.fa-phone {
+        position: relative;
+        top: 2px;
+        color: $blue;
+        z-index: 9;
+    }
+
+    i.fa-phone {
+        font-size: 24px;
+        position: relative;
+        top: 4px;
+    }
+
+    &:hover {
+        background-color: $tropicalBlue;
+
+        span,
+        i.fa-phone::before {
+            color: $white !important;
+        }
+    }
+
+    &::after,
+    &::before {
+        content: " ";
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background: $blue;
+        z-index: -1;
+    }
+
+    &::before {
+        /*   background: blue; */
+        transform: translateX(-100%);
+        z-index: 1;
+    }
+
+    &:hover:before {
+        transform: translateX(0);
+        transition: transform 350ms ease;
+    }
+
+    &::after {
+        z-index: 0;
+        transform: translateX(100%);
+        transition: none;
+        transition: transform 350ms ease;
+    }
+
+    &:hover:after {
+        opacity: 1;
+        transform: translateX(0);
+        transition: transform 350ms 360ms ease;
+    }
+}
+
+sup {
+    font-size: .6em;
+}
+
+@import "./slider";
+@import "./intro";
+@import "./rating";
+@import "./rechner";
+@import "./client";
+@import "./portfolio";
+@import "./testimonial";
+@import "./contact";

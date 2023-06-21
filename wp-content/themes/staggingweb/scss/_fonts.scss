@@ -1,0 +1,64 @@
+@import url("https://use.typekit.net/dev0rwg.css");
+
+@font-face {
+  font-family: 'rocgrotesk-thin';
+  src: url('#{$fontPath}/roc/RocGroteskThinRegular.woff2') format('woff2'),
+  url('#{$fontPath}/roc/RocGroteskThinRegular.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'rocgrotesk-bold';
+  src: url('#{$fontPath}/roc/RocGroteskBold.woff2') format('woff2'),
+  url('#{$fontPath}/roc/RocGroteskBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'rocgrotesk-wideMedium';
+  src: url('#{$fontPath}/roc/RocGroteskWideMediumRegular.woff2') format('woff2'),
+  url('#{$fontPath}/roc/RocGroteskWideMediumRegular.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'rocgrotesk-heavy';
+  src: url('#{$fontPath}/roc/RocGroteskHeavyRegular.woff2') format('woff2'),
+  url('#{$fontPath}/roc/RocGroteskHeavyRegular.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'rocgrotesk-medium';
+  src: url('#{$fontPath}/roc/RocGroteskMediumRegular.woff2') format('woff2'),
+  url('#{$fontPath}/roc/RocGroteskMediumRegular.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'rocgrotesk-regular';
+  src: url('#{$fontPath}/roc/RocGroteskRegular.woff2') format('woff2'),
+  url('#{$fontPath}/roc/RocGroteskRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'rocgrotesk-light';
+  src: url('#{$fontPath}/roc/RocGroteskLightRegular.woff2') format('woff2'),
+  url('#{$fontPath}/roc/RocGroteskLightRegular.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}

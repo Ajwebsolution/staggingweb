@@ -1,0 +1,36 @@
+.instagram {
+    .heading {
+        h2 {
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+    }
+
+    &-sec {
+        .top-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .insta-img {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .folgen {
+        a {
+            padding: 0.84rem 1.0792rem;
+            background-color: #ececec;
+            border-radius: 8px;
+            color: $black;
+
+            &:hover {
+                background-color: $blue;
+                color: $white;
+            }
+        }
+    }
+}

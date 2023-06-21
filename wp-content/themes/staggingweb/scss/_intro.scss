@@ -1,0 +1,15 @@
+.intro {
+
+    &-contact {
+        text-align: right;
+        position: sticky;
+        top: 15px;
+
+        a {
+            img {
+                width: 1.5rem;
+                position: relative;
+            }
+        }
+    }
+}

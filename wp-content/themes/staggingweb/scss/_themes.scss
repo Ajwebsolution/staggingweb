@@ -1,0 +1,106 @@
+@import './color';
+
+#color_change {
+    width: 6.875rem;
+    position: fixed;
+    top: 6.5rem;
+    z-index: 99;
+    padding: 5px;
+    background: $white;
+    right: -6.875rem;
+    transition: .5s;
+
+    &.show {
+        right: 0;
+    }
+
+    h3 {
+        font-size: 1rem;
+        color: $blk;
+    }
+
+    p {
+        position: absolute;
+        right: 6.875rem;
+        top: 0;
+        background: $white;
+        padding: 5px;
+        cursor: pointer;
+        width: 1.75rem;
+        color: $blk;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: center;
+
+        li {
+            width: 1.25rem;
+            height: 1.25rem;
+            border: 1px solid;
+            cursor: pointer;
+            border: 1px solid;
+            border-radius: 100%;
+
+            span {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+
+            &.bg {
+                &-white {
+                    background-color: $white;
+                    border-color: $blk;
+                }
+
+                &-blue {
+                    background-color: $blue;
+                    border-color: $blue;
+                }
+
+                &-tropicalBlue {
+                    background-color: $tropicalBlue;
+                    border-color: $tropicalBlue;
+                }
+
+                &-lightSlate {
+                    background-color: $lightSlate;
+                    border-color: $lightSlate;
+                }
+
+                &-orange {
+                    background-color: $orange;
+                    border-color: $orange;
+                }
+
+                &-yellow {
+                    background-color: $yellow;
+                    border-color: $yellow;
+                }
+
+                &-lgyellow {
+                    background-color: $lgyellow;
+                    border-color: $lgyellow;
+                }
+
+                &-marigold {
+                    background-color: $marigold;
+                    border-color: $marigold;
+                }
+
+                &-pink {
+                    background-color: $pink;
+                    border-color: $pink;
+                }
+
+                &-paleMauve {
+                    background-color: $paleMauve;
+                    border-color: $paleMauve;
+                }
+            }
+        }
+    }
+}

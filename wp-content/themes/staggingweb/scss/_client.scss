@@ -1,0 +1,28 @@
+.client {
+    &-sec {
+        text-align: center;
+
+        p {
+            margin-bottom: 3.625rem;
+        }
+
+    }
+
+    &-carousel {
+        .item {
+            img {
+                width: auto;
+                height: 5.375rem;
+                filter: grayscale(1);
+
+                @media (max-width: 767px) {
+                    margin: 0 auto;;
+                }
+
+                &:hover {
+                    filter: grayscale(0);
+                }
+            }
+        }
+    }
+}
